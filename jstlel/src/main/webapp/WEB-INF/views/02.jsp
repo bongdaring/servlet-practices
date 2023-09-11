@@ -15,6 +15,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h4>scope(객체의 존속 범위)</h4>
+	${vo.no } <br>
+	${vo.name } <br>
+	
+	== request scope =================<br>
+	${requestScope.no } <br>
+	${requestScope.name } <br>
+	
+	== session scope =================<br>
+	${sessionScope.no } <br>
+	${sessionScope.name } <br>
+	
+	== application scope =================<br>
+	${applicationScope.no } <br>
+	${applicationScope.name } <br>
+	
 </body>
 </html>
