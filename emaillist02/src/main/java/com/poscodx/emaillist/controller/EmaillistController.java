@@ -41,6 +41,9 @@ public class EmaillistController extends HttpServlet {
 				rd.forward(request, response);
 
 			} else {
+
+				
+				
 				List<EmaillistVo> list = new EmaillistDao().findAll();
 				request.setAttribute("list", list);
 				RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");

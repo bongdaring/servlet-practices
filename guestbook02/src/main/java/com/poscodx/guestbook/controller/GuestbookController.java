@@ -51,7 +51,7 @@ public class GuestbookController extends HttpServlet {
 
 			response.sendRedirect("/guestbook02/gb");
 			
-		}else {
+		} else {
 			List<GuestBookVo> list = new GuestBookDao().findAll();
 			request.setAttribute("list", list);
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
