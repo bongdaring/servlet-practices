@@ -12,7 +12,7 @@
 <body>
 	<h4>JSTL Test: forEach</h4>
 	<c:forEach items="${list }" var="vo">
-		<h6>${vo.no } : ${vo.name }</h6>
+		<h6>[${status.count }:${status.index }]${vo.no } : ${vo.name }</h6>
 	</c:forEach>
 </body>
 </html>
