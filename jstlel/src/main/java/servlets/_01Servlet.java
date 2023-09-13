@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jdt.internal.compiler.problem.ProblemHandler;
-
 public class _01Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -34,12 +32,12 @@ public class _01Servlet extends HttpServlet {
 		
 		Object o = null;
 		
-		UserVo userVo = new UserVo();
-		userVo.setNo(10L);
-		userVo.setName("둘리");
+//		UserVo userVo = new UserVo();
+//		userVo.setNo(10L);
+//		userVo.setName("둘리");
 		
 		request.setAttribute("obj", o);
-		request.setAttribute("vo", userVo);
+//		request.setAttribute("vo", userVo);
 
 		// Map 객체
 		Map<String, Object> m = new HashMap<>();
